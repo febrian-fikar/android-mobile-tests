@@ -21,7 +21,7 @@ Mobile.comment('Given that user has started an application')
 'Get full directory\'s path of android application'
 def appPath = PathUtil.relativeToAbsolutePath(GlobalVariable.G_AndroidApp, RunConfiguration.getProjectDir())
 
-Mobile.startApplication(appPath, false)
+Mobile.startApplication('/AUT/AUT.apk', false)
 
 Mobile.comment('And he navigates the application to Activity form')
 
